@@ -31,12 +31,17 @@
         
         .container {
             height: 100vh;
-            /* margin: 0 auto; */
-            width: 70%;
+            margin: 0 auto;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            position: absolute;
+            
+        }
+        .content {
+            max-width: 20rem;
         }
 
         .img {
@@ -112,11 +117,7 @@
 
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="img/bs.mpeg" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
+    
     <div id="balloon-container">
         <div class="container">
             <div class="content">
@@ -126,10 +127,14 @@
                 
                 <p id="line1"></p>
                 <p id="line2" class="capt"></p>
+                <audio controls autoplay>
+                    <source src="img/bs.mpeg" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
         </div>
     </div>
-
+    
     <footer>
         <p>made with <i class="bi bi-heart-fill"></i> by az</p>
     </footer>
