@@ -31,13 +31,14 @@
         
         .container {
             height: 100vh;
-            margin: 0 auto;
+            /* margin: 0 auto; */
             width: 70%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
         }
+
         .img {
             filter: saturate(1.1) brightness(1.1);
             height: 12rem;
@@ -111,7 +112,7 @@
 
 </head>
 <body>
-    <audio autoplay>
+    <audio autoplay loop>
         <source src="img/bs.mpeg" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -128,6 +129,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <p>made with <i class="bi bi-heart-fill"></i> by az</p>
     </footer>
